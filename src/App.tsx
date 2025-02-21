@@ -4,6 +4,7 @@ import { ThemeProvider } from "@mui/material"
 import theme from "./styles/Theme"
 import MainPage from "./pages/MainPage"
 import AboutMe from "./pages/AboutMe"
+import PageNotFound from "./components/PageNotFound"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
