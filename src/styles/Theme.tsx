@@ -35,11 +35,11 @@ const theme = createTheme({
     fontFamily: "inherit",
 
     h1: {
-      // fontSize: "2.5rem",
-      // fontWeight: 700,
-      // letterSpacing: "0.4px",
+      fontSize: "2.2rem",
+      fontWeight: 400,
+      letterSpacing: "0.4px",
 
-      // color: "#000000",
+      color: "#000000",
     },
 
     h2: {
@@ -47,10 +47,24 @@ const theme = createTheme({
       fontWeight: 400,
     },
 
+    h3: {
+      fontSize: "1.9rem",
+      fontWeight: 500,
+    },
+
 
     body1: {
-      // fontWeight: 500,
-      // fontSize: "1.55rem",
+      fontWeight: 500,
+      fontSize: "1.55rem",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,    
+      sm: 600,  
+      md: 950,  
+      lg: 1200, 
+      xl: 1536,
     },
   },
 });

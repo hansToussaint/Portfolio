@@ -30,6 +30,7 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection}) => {
        {label: "Services", id:"services"},
        {label: "Skills", id:"skills"},
        {label: "Projects", id:"projects"},
+       {label: "Testimonials", id:"testimonials"},
        {label: "Contact", id:"contact"},
     ];
 
@@ -49,7 +50,6 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection}) => {
             backgroundColor: theme.palette.common.white,
             boxShadow: scrolled ? "0px 0.1px 0 #cccccc" : "none",
             transition: "background-color 0.3s, box-shadow 0.3s",
-            // padding: !isSmallScreen ? "1.5rem 15rem" : "1.5rem",
             padding: isSmallScreen ? "1.6rem 0" : "1.6rem",
         }}
         >
@@ -60,10 +60,16 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection}) => {
                 width: "100%",
                 maxWidth: "1200px",
                 margin: "0 auto",
-
             }}>
                 {/* Logo */}
-                <Button onClick={() =>handleScrollTo("home")} disableRipple>
+                <Button 
+                onClick={() =>handleScrollTo("home")} 
+                disableRipple 
+                sx={{
+                    padding: 0,
+                    alignSelf: "flex-start",
+                  }}
+                >
                    <Logo />
                 </Button>
 
@@ -72,7 +78,7 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection}) => {
                     <Box sx={{
                         display: "flex",
                         justifyContent: "center",
-                        gap: { xs: 2, sm: 4, md: 6, lg: 8 },
+                        gap: { xs: 2, sm: 3, md: 4, lg: 6 },
                     }}>
                         {menuItems.map(item => (
                             <Typography
@@ -155,7 +161,6 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection}) => {
                             key={item.id}
                             onClick={() => {handleScrollTo(item.id); setDrawerOpen(false); }}
                             sx={{
-                                fontSize: "1.6rem",
                                 cursor: "pointer",
                                 bgcolor: activeSection === item.id ? theme.palette.common.secondBgColor : "none",
                                 mb: 0.7,
