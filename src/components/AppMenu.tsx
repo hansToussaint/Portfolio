@@ -29,9 +29,11 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection, onSectionClick}) => {
     ];
 
     const handleMenuClick = (sectionId: string) => {
+        const baseRoute = import.meta.env.BASE_URL;
+        
         if (location.pathname !== "/") {
           // Si on n'est pas sur la page principale, on navigue vers "/" avec le hash
-          navigate(`/#${sectionId}`);
+          navigate(`${baseRoute}#${sectionId}`);
         } else {
           // Sinon, on appelle la fonction de scroll de la page principale
           if (onSectionClick)
