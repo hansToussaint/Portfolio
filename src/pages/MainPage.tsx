@@ -101,7 +101,7 @@ const MainPage: React.FC = () => {
                         >
                             <Grid2 display="flex">
                                 <Service
-                                    icon={<ColoredIcon src="/icons/front-end-programming.png" />}
+                                    icon={<ColoredIcon src={`${import.meta.env.BASE_URL}icons/front-end-programming.png`} />}
                                     title="Front End Development"
                                     options={["HTML/CSS", "Javascript", "Typescript", "React/Next.js", "Redux", "Tailwind Css", "Material UI"]}
                                 />
@@ -109,7 +109,7 @@ const MainPage: React.FC = () => {
 
                             <Grid2 display="flex">
                                 <Service 
-                                     icon={<ColoredIcon src="/icons/back-end.png" />}
+                                     icon={<ColoredIcon src={`${import.meta.env.BASE_URL}icons/back-end.png`} />}
                                      title="Back End Development"
                                      options={["Node.js", "MongoDB", "PostgreSQL", "Express",]}
                                 />
@@ -117,7 +117,7 @@ const MainPage: React.FC = () => {
 
                             <Grid2 display="flex">
                                 <Service 
-                                    icon={<ColoredIcon src="/icons/ux-design.png" />}
+                                    icon={<ColoredIcon src={`${import.meta.env.BASE_URL}icons/ux-design.png`} />}
                                     title="Web Design"
                                     options={["UI/UX", "Responsive Design", "Figma", "Prototyping", "Landing Pages",]}
                             />

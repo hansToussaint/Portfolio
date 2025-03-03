@@ -18,7 +18,7 @@ const StackCard: React.FC<StackCardProps> = ({stack}) => {
             }}>
             <CardContent>
                  <Box sx={{mb:3}}>
-                     <ColoredIcon src="/icons/technology.png" />
+                     <ColoredIcon src={`${import.meta.env.BASE_URL}icons/technology.png`} />
                 </Box> 
 
 

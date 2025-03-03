@@ -6,7 +6,7 @@ const ProfileAboutMe: React.FC = () => {
     <Box>
       <Box>
         <img
-          src="/web-developer.jpg" 
+          src={`${import.meta.env.BASE_URL}web-developer.jpg`}
           alt="Profile"
           style={{
             width: "100%",

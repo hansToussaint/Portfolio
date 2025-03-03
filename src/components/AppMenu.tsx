@@ -130,7 +130,7 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection, onSectionClick}) => {
                             margin: 0,
                         }}
                         >
-                        <Avatar src="/avatar.jpg" alt="Hans Avatar" sx={{
+                        <Avatar src={`${import.meta.env.BASE_URL}avatar.jpg`} alt="Hans Avatar" sx={{
                              height: "100%",
                              width: "100%",
                              transition: "none",

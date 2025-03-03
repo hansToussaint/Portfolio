@@ -91,7 +91,7 @@ const HomeSection: React.FC = () => {
         }}
       >
         <img
-          src="/myPhoto.png" 
+          src={`${import.meta.env.BASE_URL}myPhoto.png`} 
           alt="My photo"
           style={{
             width: "100%",
