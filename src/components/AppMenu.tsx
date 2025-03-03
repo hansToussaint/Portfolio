@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { AppBar, Avatar, Box, Button, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography, useMediaQuery } from "@mui/material";
 
 import theme from "../styles/Theme";
@@ -16,6 +16,7 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection, onSectionClick}) => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -29,9 +30,16 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection, onSectionClick}) => {
     ];
 
     const handleMenuClick = (sectionId: string) => {
-        const baseRoute = import.meta.env.BASE_URL;
 
-        if (location.pathname !== baseRoute) {
+        const normalizedPath = location.pathname.endsWith("/") 
+        ? location.pathname 
+        : location.pathname + "/";
+
+       const normalizedBase = import.meta.env.BASE_URL.endsWith("/") 
+       ? import.meta.env.BASE_URL 
+       : import.meta.env.BASE_URL + "/";
+
+        if (normalizedPath !== normalizedBase) {
           // Si on n'est pas sur la page principale, on navigue vers "/" avec le hash
           navigate(`/#${sectionId}`);
         } else {
