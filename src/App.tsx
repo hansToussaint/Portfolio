@@ -14,7 +14,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/Portfolio">
       <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainPage />} />
