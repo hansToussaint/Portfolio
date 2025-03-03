@@ -1,7 +1,6 @@
 const Logo: React.FC = () => {
     return <>
-    {/* <img src="/logo.png" alt="Logo Grenier"  */}
-    <img src="/Hans.png" alt="Logo Grenier" 
+    <img src="/Hans.png" alt="Logo Hans"
       style={{
         display: "block",
         // width: "13rem",
