@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { ThemeProvider } from "@mui/material"
+
+import theme from "./styles/Theme"
+import MainPage from "./pages/MainPage"
+import AboutMe from "./pages/AboutMe"
+import PageNotFound from "./components/PageNotFound"
+import ScrollToTop from "./components/ScrollToTop"
+import { Toaster } from "react-hot-toast"
+import ProjectInfoPage from "./pages/ProjectInfoPage"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+      <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects/:projectId" element={<ProjectInfoPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+
+      <Toaster
+            position="top-center"
+            gutter={12}
+            containerStyle={{ margin: "8px" }}
+            toastOptions={{
+              success: {
+                duration: 5000,
+              },
+              error: {
+                duration: 7000,
+              },
+              style: {
+                fontSize: "16px",
+                maxWidth: "500px",
+                padding: "16px, 24px",
+                backgroundColor: theme.palette.common.secondBgColor,
+                color: theme.palette.common.secondTextColor,
+              },
+            }}
+          />
+    </ThemeProvider>
   )
 }
 
-export default App
+export default App;
