@@ -14,12 +14,12 @@ export interface ProjectsProps {
       id: 1,
       title: "Grenier Wallet System & Dashboard",
       images: [
-        "/projects/1/grenier-1.png",
-        "/projects/1/grenier-2.png",
-        "/projects/1/grenier-3.png",
-        "/projects/1/grenier-4.png",
-        "/projects/1/grenier-5.png",
-        "/projects/1/grenier-6.png",
+        `${import.meta.env.BASE_URL}projects/1/grenier-1.png`,
+        `${import.meta.env.BASE_URL}projects/1/grenier-2.png`,
+        `${import.meta.env.BASE_URL}projects/1/grenier-3.png`,
+        `${import.meta.env.BASE_URL}projects/1/grenier-4.png`,
+        `${import.meta.env.BASE_URL}projects/1/grenier-5.png`,
+        `${import.meta.env.BASE_URL}projects/1/grenier-6.png`,
       ],
       "description-1": "As a Front-end Developer at Grenier since October 2024, I spearheaded the development of an internal enterprise wallet system that empowers multiple users to securely deposit and withdraw funds within specified time intervals. This system, built with React and TypeScript, incorporates robust security protocols and offers a seamless user experience for managing financial transactions in a corporate environment.",
       "description-2": "In addition to the wallet system, I designed and developed an interactive dashboard to visualize real-time financial data and customer insights through dynamic, interactive graphs. This dashboard enables key stakeholders to analyze performance metrics, quickly identify trends, and make data-driven decisions to enhance operational efficiency.",
@@ -29,16 +29,16 @@ export interface ProjectsProps {
     {
       "id": 2,
       "images": [
-        "/projects/2/junior-1.jpeg",
-        "/projects/2/junior-2.jpeg",
-        "/projects/2/junior-3.jpeg",
-        "/projects/2/junior-4.jpeg",
-        "/projects/2/junior-5.jpeg",
-        "/projects/2/junior-6.jpeg",
-        "/projects/2/junior-7.jpeg",
-        "/projects/2/junior-8.jpeg",
-        "/projects/2/junior-9.jpeg",
-        "/projects/2/junior-10.jpeg"
+        `${import.meta.env.BASE_URL}projects/2/junior-1.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-2.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-3.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-4.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-5.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-6.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-7.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-8.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-9.jpeg`,
+        `${import.meta.env.BASE_URL}projects/2/junior-10.jpeg`,
       ],
       "title": "Professional Dance Studio Platform",
       "description-1": "The Professional Dance Studio Platform is a comprehensive, state-of-the-art website developed for a professional dancer to showcase an extensive range of dance styles and class offerings. The platform delivers an immersive user experience through interactive galleries, high-quality media content, and a seamless online registration process, serving as a digital gateway for prospective students and enthusiasts.",
@@ -49,10 +49,10 @@ export interface ProjectsProps {
     {
       "id": 3,
       "images": [
-        "/projects/3/redears-1.jpg",
-        "/projects/3/redears-2.jpeg",
-        "/projects/3/redears-3.jpeg",
-        "/projects/3/redears-4.jpeg"
+        `${import.meta.env.BASE_URL}projects/3/redears-1.jpg`,
+        `${import.meta.env.BASE_URL}projects/3/redears-2.jpeg`,
+        `${import.meta.env.BASE_URL}projects/3/redears-3.jpeg`,
+        `${import.meta.env.BASE_URL}projects/3/redears-4.jpeg`
       ],
       "title": "Academic Digital Library Platform Prototype",
       "description-1": "The Academic Digital Library Platform Prototype is an innovative solution designed to democratize access to literature for students and the wider community. Developed for College Saint-Martin de Tours, it offers free and seamless access to thousands of books, featuring intuitive navigation, advanced search capabilities, and personalized recommendations for an engaging reading experience.",
@@ -63,12 +63,12 @@ export interface ProjectsProps {
     {
       "id": 4,
       "images": [
-        "/projects/4/sort-1.jpg",
-        "/projects/4/sort-2.jpg",
-        "/projects/4/sort-3.jpg",
-        "/projects/4/sort-4.jpg",
-        "/projects/4/sort-5.jpg",
-        "/projects/4/sort-6.jpg"
+        `${import.meta.env.BASE_URL}projects/4/sort-1.jpg`,
+        `${import.meta.env.BASE_URL}projects/4/sort-2.jpg`,
+        `${import.meta.env.BASE_URL}projects/4/sort-3.jpg`,
+        `${import.meta.env.BASE_URL}projects/4/sort-4.jpg`,
+        `${import.meta.env.BASE_URL}projects/4/sort-5.jpg`,
+        `${import.meta.env.BASE_URL}projects/4/sort-6.jpg`
       ],
       "title": "Interactive Sorting Algorithm Visualization Tool",
       "description-1": "The Interactive Sorting Algorithm Visualization Tool is designed to visually demonstrate various sorting algorithms in action. It offers real-time animations for Bubble Sort, Selection Sort, Insertion Sort, Quick Sort, Merge Sort, and Heap Sort, allowing users to follow the step-by-step process of each algorithm.",
