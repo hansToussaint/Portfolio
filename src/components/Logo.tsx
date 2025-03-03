@@ -1,6 +1,6 @@
 const Logo: React.FC = () => {
     return <>
-    <img src="/Hans.png" alt="Logo Hans"
+    <img src={`${import.meta.env.BASE_URL}Hans.png`} alt="Logo Hans"
       style={{
         display: "block",
         // width: "13rem",
