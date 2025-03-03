@@ -26,7 +26,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         m: isSmallScreen ? -2 : 0,
       }}
     >
-      <CardActionArea onClick={handleClick}>
+      <CardActionArea 
+      onClick={handleClick} 
+      disableRipple
+      disableTouchRipple 
+      >
         {project.images.length > 0 && (
           <CardMedia
             component="img"
@@ -58,7 +62,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Typography 
         variant="h3" 
         sx={{
-          borderBottom: `0.5px solid ${theme.palette.common.redColor}`
+          borderBottom: isSmallScreen ? "none" : `0.5px solid ${theme.palette.common.redColor}`
           }}>
           {project.title}
         </Typography>
