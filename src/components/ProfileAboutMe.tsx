@@ -8,6 +8,7 @@ const ProfileAboutMe: React.FC = () => {
         <img
           src={`${import.meta.env.BASE_URL}web-developer.jpg`}
           alt="Profile"
+          loading="lazy"
           style={{
             width: "100%",
             objectFit: "cover",

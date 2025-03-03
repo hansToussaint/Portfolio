@@ -27,6 +27,7 @@ const ProjectInfoPage: React.FC = () => {
         key={i}
         component="img"
         src={img}
+        loading="lazy"
         alt={`${project.title} image ${i + 1}`}
         sx={{
             width: "100%",

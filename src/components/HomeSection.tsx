@@ -93,6 +93,7 @@ const HomeSection: React.FC = () => {
         <img
           src={`${import.meta.env.BASE_URL}myPhoto.png`} 
           alt="My photo"
+          loading="lazy"
           style={{
             width: "100%",
             height: "100%",

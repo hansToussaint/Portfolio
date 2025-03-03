@@ -31,6 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <CardMedia
             component="img"
             image={project.images[0]}
+            loading="lazy"
             alt={project.title}
             sx={{
               width: "100%",
