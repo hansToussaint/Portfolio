@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ProjectsProps } from "../projects/projects";
-import { Card, CardActionArea, CardContent, CardMedia, Typography, useMediaQuery } from "@mui/material";
+import { Card, CardActionArea, CardMedia, Typography, useMediaQuery } from "@mui/material";
 import theme from "../styles/Theme";
 
 interface ProjectCardProps {
@@ -42,14 +42,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           />
         )}
       </CardActionArea>
-      <CardContent
+
+      <CardActionArea
+      onClick={handleClick}
+      disableRipple
+      disableTouchRipple   
         sx={{
+          width: "fit-content",
           backgroundColor: "transparent",
+          background: "none",
           pl: 0,
+          pt: 2,
         }}
       >
-        <Typography variant="h3">{project.title}</Typography>
-      </CardContent>
+        <Typography 
+        variant="h3" 
+        sx={{
+          borderBottom: `0.5px solid ${theme.palette.common.redColor}`
+          }}>
+          {project.title}
+        </Typography>
+      </CardActionArea>
     </Card>
   );
 };
