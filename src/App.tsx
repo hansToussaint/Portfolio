@@ -14,7 +14,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainPage />} />
