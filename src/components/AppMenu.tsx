@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { AppBar, Avatar, Box, Button, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography, useMediaQuery } from "@mui/material";
+import { AppBar, Box, Button, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography, useMediaQuery } from "@mui/material";
 
 import theme from "../styles/Theme";
-import { Close} from "@mui/icons-material";
+import { Close, Menu} from "@mui/icons-material";
 import Logo from "./Logo";
 import SocialLinks from "./SocialLinks";
 
@@ -140,11 +140,13 @@ const AppMenu: React.FC<AppMenuProps> = ({activeSection, onSectionClick}) => {
                             margin: 0,
                         }}
                         >
-                        <Avatar src={`${import.meta.env.BASE_URL}avatar.jpg`} alt="Hans Avatar" sx={{
+                        {/* <Avatar src={`${import.meta.env.BASE_URL}avatar.jpg`} alt="Hans Avatar" sx={{
                              height: "100%",
                              width: "100%",
                              transition: "none",
-                        }} />
+                        }} /> */}
+
+                        <Menu sx={{ width: "100%", height: "100%" }} />
                     </IconButton>
 
                     <Drawer 
