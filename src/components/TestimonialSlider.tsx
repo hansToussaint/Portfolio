@@ -13,8 +13,8 @@ import CustomSlider from "./CustomSlider";
       author: "Junior Descollines",
     },
     {
-      text: "As a developer specializing in SQL and data analysis, I had the pleasure of working with Hans on a complex project. His front-end expertise brought our work to life with an intuitive and visually appealing interface. He is a highly skilled and collaborative developer who ensures seamless integration between design and functionality, making him an invaluable asset to any team.",
-      author: "Bens Loiseau Phabrice",
+      text: "As a BI Developer, I had the pleasure of working with Hans on a complex project. His front-end expertise brought our work to life with an intuitive and visually appealing interface. He is a highly skilled and collaborative developer who ensures seamless integration between design and functionality, making him an invaluable asset to any team.",
+      author: "Bens-Phabrice LOISEAU",
     },
     {
       text: "Веб-сайт, разработанный для моей практики, превзошел все мои ожидания. Современный дизайн и интуитивно понятный интерфейс создали комфортное пространство, где мои клиенты с легкостью находят нужную информацию и записываются на консультации. Я высоко оценила профессионализм и внимание к деталям, благодаря которым этот сайт стал настоящей визитной карточкой моего бизнеса.",
