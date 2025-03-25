@@ -64,7 +64,7 @@ const HomeSection: React.FC = () => {
 
         <Grid2 sx={{ display: "flex", alignItems: "center", mt: 10 }}>
           <a
-            href="/public/HANS_TOUSSAINT_Front_end_developper.pdf"
+            href="/HANS_TOUSSAINT_Front_end_developper.pdf"
             download
             style={{
               display: "flex",
